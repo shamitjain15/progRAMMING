@@ -65,6 +65,27 @@ Created on Mon Oct 12 11:09:01 2026
 #     total= total+ a[(z+e)%26]
 # print(total)
     
+81
+# x= [12,2,33,34,78]
+# total=0
+# for i in x:
+#     total=total+i
+    
+# print(total)
+
+82
+# x= [12,2,33,34,78]
+# product=1
+# for i in x:
+#     product=product*i
+
+83
+# x= [12,2,33,34,78]
+# small=x[0]
+# for i in x:
+#     if i<small:
+#         small=i
+# print(small)
 
     
     
