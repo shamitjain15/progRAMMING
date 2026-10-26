@@ -1,0 +1,134 @@
+1
+'''a=input().lower() 
+Vowels=0 
+Consonants=0 
+Digits=0 
+Spaces=0 
+Others=0
+ for i in a:   
+     if i in "aeiou":
+         Vowels+=1   
+     elif  i in "qwrtypsdfghjklzxcvbnm":
+           Consonants+=1
+     elif i in "1234567890":
+           Digits+=1
+     elif i==" ":
+           Spaces+=1
+     else:
+         Others+=1
+print("Vowels:", Vowels)
+print("Consonants:", Consonants)
+print("Digits:", Digits)
+print("Spaces:", Spaces)
+print("Others:", Others)''' 
+2
+'''a=input() 
+result="" 
+for i in range(len(a)):
+    if i%2==0:
+        result+=a[i].upper()
+    else:
+        result+=a[i].lower() 
+print(result)'''
+3
+'''Password=input()
+ 
+if len(Password)<8:  
+    print("WEAK") 
+else:
+    Uppercase=0
+    Lowercase=0
+    Digits=0
+    Special=0
+for i in Password:     
+    if i in "QWERTYUIOPASDFGHJKLZXCVBNM":
+        Uppercase+=1     
+    elif i in "qwertyuiopasdfghjklzxcvbnm":       
+        Lowercase+=1     
+    elif i in "1234567890":       
+        Digits+=1     
+    else:       
+        Special+=1   
+        count=0   
+    if Uppercase>0:     
+        count+=1   
+    if Lowercase>0:     
+        count+=1   
+    if Digits>0:     
+        count+=1   
+    if Special>0:     
+        count+=1   
+    if count==4:     
+        print("STRONG")   
+    elif count==2 or count==3:     
+        print("MODERATE")   
+    else:
+        print("WEAK")''' 
+4
+'''a=input()
+b=input()
+count=0 
+positions="" 
+for i in range(len(a)):   
+    if a[i]==b:     
+        count+=1 
+positions+=str(i+1)+" " 
+if count==0:   
+   positions=-1 
+print("count:", count) 
+print("positions:", positions)''' 
+5
+'''a=input() 
+words=a.split() 
+for i in words:   
+    print(len(i),end=" ")''' 
+6
+'''a=input() 
+for i in range(len(a)):   
+    if a[0:2]=="RJ" and a[2] in "1234567890" and a[3] in "1234567890" and a[4] in "QWERTYUIOPASDFGHJKLZXCVBNM" and a[6] in "QWERTYUIOPASDFGHJKLZXCVBNM" and a[6] in "1234567890" and a[7] in "1234567890" and a[8] in "1234567890" and a[9] in "1234567890" and len(a)==10:     
+        print("True")     
+        break   
+    else:     
+        print("False")     
+        break'''
+7
+'''a=input() 
+count=0 
+for i in range(len(a)//2):   
+    if a[i]!=a[len(a)-1-i]:     
+        count+=1 
+        print("Changes needed:", count)'''
+8
+'''a=input() 
+result="" 
+for i in a:   
+    if i not in result:     
+        result+=i 
+        print(result)'''       
+9
+'''a=input() 
+k=int(input()) 
+result="" 
+letters="abcdefghijklmnopqrstuvwxyz" 
+for i in a:   
+    if i==" ":     
+        result+=" "   
+    else:     
+        for j in range(len(letters)):
+            if i==letters[j]:         
+                result+=letters[(j+k)%26] 
+print(result)''' 
+10
+'''a=input() 
+count=1 
+max=1 
+result=a[0] 
+for i in range(1,len(a)):   
+    if a[i]==a[i-1]:     
+        count+=1   
+    else:     
+        count=1   
+    if count>max:     
+        max=count     
+        result=a[i]
+print(result,max)'''
